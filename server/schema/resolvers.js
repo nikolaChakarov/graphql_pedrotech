@@ -3,11 +3,11 @@ let { UsersList, MoviesList } = require("../fakeDate");
 const resolvers = {
     // User resolvers
     Query: {
-        getAllUsers() {
+        users() {
             return UsersList;
         },
 
-        getUser(_parent, args) {
+        user(_parent, args) {
             return UsersList.find((el) => el.id == args.id);
         },
         // Movie resolvers

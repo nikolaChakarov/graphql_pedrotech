@@ -19,8 +19,8 @@ const typeDefs = gql`
     }
 
     type Query {
-        getAllUsers: [User!]!
-        getUser(id: ID!): User
+        users: [User!]!
+        user(id: ID!): User
         movies: [Movie!]!
         movie(name: String!): Movie!
     }
